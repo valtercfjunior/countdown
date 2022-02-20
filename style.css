@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --black: #4D4C59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+  --purp: #6b63ffaf;
+  --light-red: rgba(209, 52, 52, 0.973);
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  
+
+}
+
+#content {
+  text-align: center;
+  
+}
+
+main {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    margin-top: 5px;  
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--purple);
+    letter-spacing: 2px;
+}
+
+
+#clock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 50px;    
+  letter-spacing: 5px;
+}
+
+.clockContent{
+  margin-right: 50px;
+}
+
+
+p, span {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 10px;
+  
+}
+
+#clock p{
+    font-weight: 700;
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--purple);
+  color: var(--light-grey);
+
+  width: 120px;
+  height: 50px;
+
+  margin: auto auto 20px auto;
+}
+
+#codeButton{
+  width: 70px;
+  background-color: var(--black); 
+  
+}
+
+
+img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s
+}
+
+#rocket-image{
+    margin-left: 100px;
+}
+
+#bottom-image{
+    position: absolute;
+    bottom: 4px;
+    
+}
+#bottom-image, #top-image {
+    text-align: center;
+    width: 100vw
+    
+}
+
+
+
+/* movements */
+
+button:hover{
+    
+    transition: 0.3s;    
+    background-color: var(--purp);
+    color: var(--purple);
+
+    cursor: pointer;
+}
+
+#codeButton:hover{
+  transition: 0.3s;    
+  background-color: var(--light-grey);
+  color: var(--black);
+
+  cursor: pointer; 
+  
+}
+
+img:hover{
+
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+       
+}
+
+#closeModal:hover{
+  transform: scale(1.1);
+  background-color: var(--light-red)
+}
+
+
+
+/* modal */
+
+#modal{
+
+  width: 500px;
+  height: 400px;
+
+  background-color: var(--black);
+  border-radius: 10px;
+
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  top: 25%;
+  left: 30%;
+ 
+}
+#modal input, textarea{
+  width: 80%;
+  border: none;
+  outline: none;
+
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding:5px
+
+
+}
+#modalTittle{
+  color: var(--purple);
+  font-size: 30px;
+
+}
+
+label{
+  color: var(--text-color)
+
+}
+
+#name{
+
+  height: 10%
+}
+
+#msg{
+  height: 50%; 
+  resize: none; 
+
+}
+
+#closeModal{
+  width: 30px;
+  height: 30px;
+  position:absolute;
+  right:10px;
+  top:10px;
+
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.blured{
+  filter: blur(2px);
+}
+

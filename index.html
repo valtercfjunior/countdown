@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="top-image">
+        <img src="./images/top-image.svg" alt="imagem topo" />
+      </div>
+      <main>
+        <section id="content">
+          <h1>PRONTO PARA PARAR DE APRENDER EM... </h1>
+
+          <div id="clock">
+
+            <div class="clockDays clockContent">
+              <span>dias</span>
+              <p class="text" id="days"></p>
+            </div>
+            <div class="clockHours clockContent">
+              <span>horas</span>
+              <p class="text" id="hours"></p>
+            </div>
+            <div class="clockMinutes clockContent">
+              <span>minutos</span>
+              <p class="text" id="minutes"></p>
+            </div>
+            <div class="clockSeconds clockContent">
+              <span>segundos</span>
+              <p class="text" id="seconds"></p>
+            </div>
+            
+          </div>
+
+          <p>Mande uma mensagem para meu e-mail com dicas de como melhorar!</p>
+
+          <button onclick="openModal()" >Me critique!</button>
+
+          <p>Visualize meu código.</p>
+          <button id="codeButton" onclick="openCode()" >Código</button>
+
+        </section>
+
+        <section id="rocket-image">
+          <div>
+            <img src="./images/rocket.svg" alt="imagem-foguete" />
+          </div>
+        </section>
+      </main>
+
+      <div id="bottom-image">
+        <img src="./images/bottom-image.svg" alt="imagem bottom" />
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal" class="hidden">
+      <p id="modalTittle">Me critique!</p>
+      <label for="text">Nome</label>
+      <input type="text" name="name" id="name" placeholder="Nome" maxlength="20">
+
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="e-mail" maxlength="20">
+
+      <label for="msg">Mensagem</label>
+      <textarea name="msg" id="msg"  placeholder="Sua mensagem será enviada para meu e-mail">
+       
+      </textarea>
+      <button onclick="submitEmail()" class="modalButton">Enviar</button>
+      <button id="closeModal" onclick="closeModal()">X</button>
+
+    </div>
+
+    <!-- CODEPEN  -->
+    <p id="codeModal" class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css" data-slug-hash="oNozbNY" data-preview="false" data-editable="false" data-user="valtercfjunior" style="height: 200px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: none; margin: 1em 0; padding: 3  em; width:50vw;">
+      <span>See the Pen <a href="https://codepen.io/valtercfjunior/pen/oNozbNY">
+      Untitled</a> by Valter Junior (<a href="https://codepen.io/valtercfjunior">@valtercfjunior</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+  </body>
+  
+</html>
